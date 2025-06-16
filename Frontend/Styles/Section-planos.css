@@ -1,0 +1,32 @@
+.section-planos {
+    width: 100%;
+    overflow: hidden; /* Evita margin-collapse */
+}
+
+.text-apresentation-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#group-cards-planos {
+    display: flex;
+    margin: 5rem auto;
+    padding: 0 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1100px;
+}
+
+.card-plano {
+    background-color: #D9D9D9;
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    border-radius: 5%;
+    flex: 0 0 300px;
+}
+
+
+
