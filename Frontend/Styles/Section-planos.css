@@ -31,5 +31,32 @@
     flex: 0 0 300px;
 }
 
+.arraste-info {
+    display: none;
+    text-align: center;
+    color: #a4a4a4;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
 
 
+/* 🔽 Carrossel no mobile */
+@media (max-width: 768px) {
+    #group-cards-planos {
+        flex-wrap: nowrap;         /* Não quebra linha */
+        overflow-x: auto;          /* Ativa rolagem horizontal */
+        scroll-snap-type: x mandatory; /* Rolagem mais suave e travada */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .card-plano {
+        flex: 0 0 100%;             /* Ocupa 80% da largura da tela */
+        scroll-snap-align: center;  /* Alinha no começo da tela ao rolar */
+        margin-right: 1rem;        /* Espaço entre cards */
+    }
+
+    .arraste-info {
+        display: block;
+    }
+
+}
