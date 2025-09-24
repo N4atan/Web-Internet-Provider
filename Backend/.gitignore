@@ -1,0 +1,13 @@
+# Pasta de dependências do Node.js
+node_modules/
+
+# Arquivos de variáveis de ambiente
+.env
+
+# Arquivos de compilação
+dist/
+build/
+
+# Logs e outros arquivos gerados
+npm-debug.log*
+.DS_Store
