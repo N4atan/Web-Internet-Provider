@@ -2,6 +2,7 @@ import express, { Application } from 'express';
 import { UserRouter } from './routers/UserRouter';
 import { AppDataSource } from './config/data-source'; 
 import * as dotenv from 'dotenv'; 
+import cors from 'cors';
 
 
 const app: Application = express();  // Tipando 'app' como 'Application'
@@ -14,6 +15,8 @@ dotenv.config();
 
 // Middleware para permitir que o Express interprete JSON
 app.use(express.json());
+
+app.use(cors());
 
 
 // Configurando a rota base para os usuários
